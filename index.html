@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="What Is the Law? A System for Statutory Research (STARA) with Large Language Models"
+    />
+    <meta
+      property="og:title"
+      content="What Is the Law? A System for Statutory Research (STARA) with Large Language Models"
+    />
+    <meta
+      property="og:description"
+      content="An automated system capable of performing accurate statutory surveys using large language models."
+    />
+    <meta
+      property="og:url"
+      content="https://reglab.github.io/stara"
+    />
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta
+      name="twitter:title"
+      content="What Is the Law? A System for Statutory Research (STARA) with Large Language Models"
+    />
+    <meta
+      name="twitter:description"
+      content="An automated system capable of performing accurate statutory surveys using large language models."
+    />
+    <meta
+      name="keywords"
+      content="statutory research, large language models, legal code, law, STARA"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Andy Vallebueno" />
+
+    <title>
+      What Is the Law? A System for Statutory Research (STARA) with Large Language Models
+    </title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="static/css/bulma.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="prefetch" href="faq.html" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body" style="padding-bottom: 1em">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                What Is the Law? A System for Statutory Research (STARA) with Large Language Models
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"> Faiz Surani<sup>*</sup>, </span>
+                <span class="author-block"> Lindsey A. Gailmard<sup>*</sup>, </span>
+                <span class="author-block"> Allison Casasola, </span>
+                <span class="author-block"> Varun Magesh, </span>
+                <span class="author-block"> Emily J. Robitschek, </span>
+                <span class="author-block"> Daniel E. Ho </span>
+              </div>
+
+              <div class="affiliations" style="font-size: 0.9em">
+                <span class="affiliation">Stanford University</span>
+              </div>
+
+              <div class="is-size-6 author-notes">
+                <span><sup>*</sup>Equal Contribution</span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <div>
+                    <span class="link-block">
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="external-link button is-normal is-rounded is-dark"
+                      >
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+                    <span class="link-block">
+                      <a
+                        href="press.html"
+                        class="external-link button is-normal is-rounded is-dark"
+                      >
+                        <span class="icon">
+                          <i class="fas fa-newspaper"></i>
+                        </span>
+                        <span>Press</span>
+                      </a>
+                    </span>
+                    <span class="link-block">
+                      <a
+                        href="faq.html"
+                        class="external-link button is-normal is-rounded is-dark"
+                      >
+                        <span class="icon">
+                          <i class="fas fa-question-circle"></i>
+                        </span>
+                        <span>FAQ</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="abstract section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Each year thousands of bills are enacted into law by Congress, state legislatures, and municipalities. As new laws are enacted, legal codes have grown in length and complexity to such an extent that, in many domains, even the government lacks systematic knowledge of <em>what the law is</em>. This challenge has repeatedly stymied legal reform and research efforts. To address the problem, we develop the Statutory Research Assistant (STARA), an automated system capable of performing accurate "statutory surveys"---compilations of all provisions relevant to a particular legal issue, together with detailed annotations and reasoning. We validate STARA's accuracy on three existing human-compiled surveys, showing that it can reproduce them with high fidelity and in many cases identify hundreds of previously undiscovered provisions. We address the unique challenges of automated statutory research, and show that STARA's domain-specific architecture yields substantial improvements in accuracy over off-the-shelf  language models. STARA can dramatically reduce the time for discerning the law, and we discuss its considerable implications for legal reform, academic research, and transparency. We make the STARA web application---and its compiled statutory surveys---available to the public upon publication.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-centered">System Design and Results</h2>
+            <div class="content has-text-justified">
+              <img
+                width="100%"
+                src="./static/images/stara_flow_diagram.jpg"
+                alt="STARA system flow diagram"
+                style="margin-top: 20px; margin-bottom: 20px"
+              />
+              <p style="font-size: 0.9em; margin-top: 10px">
+                <b>Figure:</b> <b>Left:</b> Illustration of the STARA system's components. <b>Right:</b> STARA's contribution to statutory research, showing the number of newly-documented provisions (and percentage improvement over previous datasets) across three validation tasks: congressionally-mandated reports and criminal statutes in the United States Code, and commissions established by the San Francisco Municipal Code.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light" id="acknowledgments">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-centered">Acknowledgments</h2>
+            <div class="content has-text-justified"></div>
+              <p>
+                We thank Ananya Karthik, Christopher D. Manning, Neel Guha, Emaan Hariri, Lucia Zheng, Isabel Gallegos, Mirac Suzgun, Elena Eneva, Jonathan Hennessy, Erin Maneri, Derek Ouyang, Kit Rodolfa, and Andrea Vallebueno for helpful feedback and comments; and David Chiu, Jon Givner, Andrea Bruss, Leah Granger, and Rebekah Krell for the collaboration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero" id="BibTeX">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3 has-text-centered">BibTeX</h2>
+            <div class="content">
+              <pre style="text-align: left"><code>@article{suranigailmard2025,
+  title={What Is the Law? A System for Statutory Research (STARA) with Large Language Models},
+  author={Surani, Faiz and Gailmard, Lindsey A and Casasola, Allison and Magesh, Varun and Robitschek, Emily J and Ho, Daniel E},
+  journal={Stanford RegLab Working Paper},
+  year={2025}
+  url={https://dho.stanford.edu/wp-content/uploads/STARA.pdf}
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" style="padding: 1rem 1.5rem;">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p><a href="index.html">Home</a> | <a href="faq.html">FAQ</a></p>
+          <p>© 2024 Stanford RegLab. All rights reserved.</p>
+          <p class="is-size-7 has-text-grey">Website made with the <a href="https://eliahuhorwitz.github.io/Academic-project-page-template/" class="has-text-grey">Academic Project Page Template</a>.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
