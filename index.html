@@ -176,7 +176,48 @@
                 style="margin-top: 20px; margin-bottom: 20px"
               />
               <p style="font-size: 0.9em; margin-top: 10px">
-                <b>Figure:</b> <b>Left:</b> Illustration of the STARA system&rsquo;s components. <b>Right:</b> STARA&rsquo;s contribution to statutory research, showing the number of newly-documented provisions (and percentage improvement over previous datasets) across three validation tasks: congressionally-mandated reports and criminal statutes in the United States Code, and commissions established by the San Francisco Municipal Code.
+                <b style="text-decoration: underline;">Figure:</b> <b>Left:</b> Illustration of the STARA system&rsquo;s components. <b>Right:</b> STARA&rsquo;s contribution to statutory research, showing the number of newly-documented provisions (and percentage improvement over previous datasets) across three validation tasks: congressionally-mandated reports and criminal statutes in the United States Code, and commissions established by the San Francisco Municipal Code.
+              </p>
+            </div>
+            <div class="table-container">
+              <table class="table is-striped is-hoverable">
+                <thead>
+                  <tr>
+                    <th>Configuration</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                    <th>Extraction</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>LLM Baseline</td>
+                    <td>0.58</td>
+                    <td>0.990</td>
+                    <td>0.28</td>
+                  </tr>
+                  <tr>
+                    <td>+Prompt Engineering</td>
+                    <td>0.76</td>
+                    <td>0.987</td>
+                    <td>0.32</td>
+                  </tr>
+                  <tr>
+                    <td>+Basic Context</td>
+                    <td><strong>0.96</strong></td>
+                    <td>0.984</td>
+                    <td>0.70</td>
+                  </tr>
+                  <tr>
+                    <td>STARA</td>
+                    <td><strong>0.96</strong></td>
+                    <td><strong>0.998</strong></td>
+                    <td><strong>0.76</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="font-size: 0.9em; margin-top: 10px">
+                <b style="text-decoration: underline;">Table:</b> Ablation study results on federal criminal statutes task. Extraction measures accuracy and completeness in identifying offense descriptions and penalties.
               </p>
             </div>
           </div>
@@ -208,7 +249,7 @@
               <pre style="text-align: left"><code>@article{suranigailmard2025,
   title={What Is the Law? A System for Statutory Research (STARA) with Large Language Models},
   author={Surani, Faiz and Gailmard, Lindsey A and Casasola, Allison and Magesh, Varun and Robitschek, Emily J and Ho, Daniel E},
-  journal={Stanford RegLab Working Paper},
+  journal={Proceedings of the 20th International Conference on Artificial Intelligence and Law},
   year={2025}
   url={https://dho.stanford.edu/wp-content/uploads/STARA.pdf}
 }</code></pre>

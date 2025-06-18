@@ -67,48 +67,8 @@
                   <strong>Lack of systematicity:</strong> Most AI research systems are meant to gather some number of relevant documents and then summarize them. But STARA is meant for systematic research, where one must locate <em>all</em> statutory language meeting some criteria. It therefore takes a fundamentally different approach from other research systems—batch annotation followed by aggregation, rather than a single thread of research.
                 </li>
               </ul>
-              We show that STARA&rsquo;s approach far outperforms general purpose architectures on a variety of statutory survey tasks:
+              Through a series of <a href="/">ablation studies</a>, we show that STARA&rsquo;s approach far outperforms general purpose architectures on a variety of statutory survey tasks. We also benchmark STARA against the Deep Research products offered by OpenAI and Google, and show that STARA locates as many as 30 times more provisions than the best-performing Deep Research product on some statutory survey tasks.
             </p>
-            
-            <div class="table-container">
-              <table class="table is-striped is-hoverable">
-                <caption class="has-text-weight-semibold mb-3">Ablation study results on federal criminal statutes task. Extraction measures accuracy and completeness in identifying offense descriptions and penalties.</caption>
-                <thead>
-                  <tr>
-                    <th>Configuration</th>
-                    <th>Precision</th>
-                    <th>Recall</th>
-                    <th>Extraction</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>LLM Baseline</td>
-                    <td>0.58</td>
-                    <td>0.990</td>
-                    <td>0.28</td>
-                  </tr>
-                  <tr>
-                    <td>+Prompt Engineering</td>
-                    <td>0.76</td>
-                    <td>0.987</td>
-                    <td>0.32</td>
-                  </tr>
-                  <tr>
-                    <td>+Basic Context</td>
-                    <td><strong>0.96</strong></td>
-                    <td>0.984</td>
-                    <td>0.70</td>
-                  </tr>
-                  <tr>
-                    <td>STARA</td>
-                    <td><strong>0.96</strong></td>
-                    <td><strong>0.998</strong></td>
-                    <td><strong>0.76</strong></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
           </div>
         </div>
       </div>
