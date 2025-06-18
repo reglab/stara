@@ -202,7 +202,42 @@
                 <b style="text-decoration: underline;">Figure:</b> <b>Left:</b> Illustration of the STARA system&rsquo;s components. <b>Right:</b> STARA&rsquo;s contribution to statutory research, showing the number of newly-documented provisions (and percentage improvement over previous datasets) across three validation tasks: congressionally-mandated reports and criminal statutes in the United States Code, and commissions established by the San Francisco Municipal Code.
               </p>
             </div>
-            <div class="table-container">
+            <div class="table-container" style="margin-top: 20px">
+              <table class="table is-striped is-hoverable">
+                <thead>
+                  <tr>
+                    <th>System</th>
+                    <th># Found</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>STARA</strong></td>
+                    <td><strong>1,983</strong></td>
+                    <td><strong>0.98</strong></td>
+                    <td><strong>0.998</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Gemini Deep Research</td>
+                    <td>282</td>
+                    <td>0.890</td>
+                    <td>0.144</td>
+                  </tr>
+                  <tr>
+                    <td>OpenAI Deep Research</td>
+                    <td>84</td>
+                    <td>0.881</td>
+                    <td>0.044</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="font-size: 0.9em; margin-top: 10px">
+                <b style="text-decoration: underline;">Table:</b> Comparison of STARA with Deep Research systems on federal criminal statutes task. STARA locates 7 times as many provisions as the best-performing Deep Research system.
+              </p>
+            </div>
+            <div class="table-container" style="margin-top: 30px">
               <table class="table is-striped is-hoverable">
                 <thead>
                   <tr>
@@ -240,7 +275,7 @@
                 </tbody>
               </table>
               <p style="font-size: 0.9em; margin-top: 10px">
-                <b style="text-decoration: underline;">Table:</b> Ablation study results on federal criminal statutes task. Extraction measures accuracy and completeness in identifying offense descriptions and penalties.
+                <b style="text-decoration: underline;">Table:</b> Ablation study results on federal criminal statutes task, demonstrating the importance of different components of STARA's architecture. Extraction measures accuracy and completeness in identifying offense descriptions and penalties.
               </p>
             </div>
           </div>
