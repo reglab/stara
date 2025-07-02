@@ -59,6 +59,8 @@
             </h3>
             <p>
               STARA builds on the same underlying large language models used by services like ChatGPT! However, by default, these systems perform poorly on complex statutory research tasks for a few reasons:
+            </p>
+            <p>
               <ul>
                 <li>
                   <strong>Unusual and diffuse statutory language:</strong> Statutory provisions have little in common with traditional prose. They contain highly precise language, terminology that may be defined in distant sections, and a web of non-obvious interdependencies. In many cases,
@@ -68,7 +70,12 @@
                   <strong>Lack of systematicity:</strong> Most AI research systems are meant to gather some number of relevant documents and then summarize them. But STARA is meant for systematic research, where one must locate <em>all</em> statutory language meeting some criteria. It therefore takes a fundamentally different approach from other research systems—batch annotation followed by aggregation, rather than a single thread of research.
                 </li>
               </ul>
-              Through a series of <a href="/">ablation studies</a>, we show that STARA&rsquo;s approach far outperforms general purpose architectures on a variety of statutory survey tasks. We also benchmark STARA against the Deep Research products offered by <a href="https://openai.com/index/introducing-deep-research/" target="_blank">OpenAI</a> and <a href="https://gemini.google/overview/deep-research/" target="_blank">Google</a>, as well as Westlaw&rsquo;s <a href="https://legal.thomsonreuters.com/en/products/westlaw-precision" target="_blank">AI Jurisdictional Surveys</a> tool, and show that STARA locates more than seven times as many provisions as the best-performing comparison system on some statutory survey tasks. Beyond performance differences, we observed reliability issues in the general-purpose tools that STARA did not exhibit: the Deep Research systems sometimes disregarded explicit research constraints and appear to have finite breadth, struggling to scale to tasks requiring the systematic identification of hundreds or thousands of sources, while Westlaw&rsquo;s specialized legal AI tool hallucinated over 100 non-existent statutory provisions. STARA&rsquo;s domain-specific architecture and systematic approach help control these hallucination risks while maintaining high precision and recall.
+            </p>
+            <p>
+              Through a series of <a href="/">ablation studies</a>, we show that STARA&rsquo;s approach far outperforms general purpose architectures on a variety of statutory survey tasks. We also benchmark STARA against the Deep Research products offered by <a href="https://openai.com/index/introducing-deep-research/" target="_blank">OpenAI</a> and <a href="https://gemini.google/overview/deep-research/" target="_blank">Google</a>, as well as Westlaw&rsquo;s <a href="https://legal.thomsonreuters.com/en/products/westlaw-precision" target="_blank">AI Jurisdictional Surveys</a> tool, and show that STARA locates more than seven times as many provisions as the best-performing comparison system on some statutory survey tasks.
+            </p>
+            <p>
+              Beyond performance differences, we observed reliability issues in the general-purpose tools that STARA did not exhibit: the Deep Research systems sometimes disregarded explicit research constraints and appear to have finite breadth, struggling to scale to tasks requiring the systematic identification of hundreds or thousands of sources, while Westlaw&rsquo;s specialized legal AI tool hallucinated 121 non-existent statutory provisions (more than half of the total number of provisions it returned). STARA&rsquo;s domain-specific architecture and systematic approach help control these hallucination risks while maintaining high precision and recall.
             </p>
           </div>
           <div class="faq-item">
